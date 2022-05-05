@@ -71,7 +71,9 @@
 
  <% for (let item of cardapio) { %>
  
-  <h4><%= item.nome %></h4>
+  <a href="detalhe/<%= item.id %>">
+    <h4><%= item.nome %></h4>
+  </a>
   <p class="ps-text-grey">
     <%= item.descicao %> U$S <%= item.valor %>
   </p>

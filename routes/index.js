@@ -4,6 +4,6 @@ const controller = require('../controllers/controller')
 
 /* GET home page. */
 router.get('/', controller.index)
-router.get('/detalhe', controller.detalhe)
+router.get('/detalhe/:id', controller.detalhe)
 
 module.exports = router
